@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   <form name="MyForm" action="https://fe.it-academy.by/TestForm.php" novalidate>
+    <p>Для внесения вашего сайта в каталог, заполните форму:</p>
+ 
+ <div class="form-control">
+    <label >Разработчики:</label>
+    <input name="User" type="text">
+    <span id="userNameError"></span>
+    </div>
+
+    <div class="form-control">
+    <label >Название сайта:</label>
+    <input name="SiteName" type="text">
+    <span id="siteNameError"></span>
+    </div>
+
+    <div class="form-control">
+    <label>URL сайта:</label>
+    <input name="SiteUrl" type="text">
+    <span id="siteUrlError"></span>
+    </div>
+
+    <div class="form-control">
+    <label>Дата запуска сайта:</label>
+    <input name="Date" type="date" >
+    <span id="dateError"></span>
+    </div>
+
+    <div class="form-control">
+    <label>Посетителей в сутки:</label>
+    <input name="Visitors" type="number">
+    <span id="visitorsError"></span>
+    </div>
+
+    <div class="form-control">
+    <label>E-mail для связи:</label>
+    <input name="Email" type="text">
+    <span id="emailError"></span>
+    </div>
+
+    <div>
+    <label>Рубрика каталога:</label>
+    <select name="Division" >
+      <option value="1">здоровье</option>
+      <option value="2">домашний уют</option>
+      <option value="3">бытовая техника</option>
+      </select>
+      <span id="divisionError"></span>
+      </div>
+  
+<div id="payment">
+      <label>Размещение:</label>
+      <input type="radio" name="Payment" value="1">
+      <span>бесплатное</span>
+      <input type="radio" name="Payment" value="2">
+      <span>платное</span>
+      <input type="radio" name="Payment" value="3">
+      <span>VIP</span>
+      <span id="paymentError"></span>
+   </div>
+   
+      <div class="form-control">
+      <label>Разрешить отзывы:</label>
+      <input type="checkbox" name="Votes">
+      <span id="votesError"></span>
+      </div>
+  
+      <div class="form-control">
+      <label>Описание сайта:</label>
+      </div>
+   
+       <div class="form-control">
+      <textarea name="Description">
+        </textarea>
+        <span id="descriptionError"></span>
+        </div>
+ 
+        <button type="submit">Опубликовать</button>
+    </form>
+    Доп проверка:
+   <br>(дата запуска сайта не может быть текущей или больше этой даты)
+   <br>(посетителей в сутки не может быть меньше нуля)
+   <br>(имейл должен содержать @)
+   <br>(рубрику здоровье выбирать нельзя)
+   <br>(бесплатное размещение выбирать нельзя)
+    <script src="script.js"></script>
+  </body>
+</html>
