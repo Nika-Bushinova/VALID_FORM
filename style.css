@@ -1,0 +1,21 @@
+.form-control.success input{
+  outline:3px green solid
+}
+.form-control.fail input{
+  outline:3px red solid
+}
+.k::after{
+  content:"oh!";
+  display:block;
+  color:white;
+  background:red;
+  font-size:14px;
+  position:absolute;
+  left:350px;
+
+}
+
+.fail2{
+color:red
+}
+
